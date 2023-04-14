@@ -1,8 +1,7 @@
-package com.spring.designpatterns.abstract_factory;
+package com.spring.designpatterns.abstract_factory.car;
 
-public enum Type {
+public enum CarType {
 
     GASOLINE,
-    HYBRID,
-    ELECTRIC
+    HYBRID
 }

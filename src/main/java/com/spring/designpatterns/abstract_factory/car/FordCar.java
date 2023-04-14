@@ -1,15 +1,15 @@
-package com.spring.designpatterns.abstract_factory;
+package com.spring.designpatterns.abstract_factory.car;
 
 public class FordCar implements ICar {
 
     private final String colour;
     private Long price;
-    private final Type type;
+    private final CarType carType;
 
     public FordCar(String colour, Long price) {
         this.colour = colour;
         this.price = price;
-        this.type = Type.HYBRID;
+        this.carType = CarType.HYBRID;
     }
 
     @Override
@@ -23,8 +23,8 @@ public class FordCar implements ICar {
     }
 
     @Override
-    public Type getType() {
-        return type;
+    public CarType getType() {
+        return carType;
     }
 
     @Override
@@ -32,9 +32,7 @@ public class FordCar implements ICar {
         return "FordCar{" +
                 "colour='" + colour + '\'' +
                 ", price=" + price +
-                ", type=" + type +
+                ", carType=" + carType +
                 '}';
     }
-
-
 }

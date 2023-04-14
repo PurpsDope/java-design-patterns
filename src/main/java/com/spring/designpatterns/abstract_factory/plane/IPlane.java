@@ -1,2 +1,9 @@
-package com.spring.designpatterns.abstract_factory.abstract_plane;public interface IPlane {
+package com.spring.designpatterns.abstract_factory.plane;
+
+
+public interface IPlane {
+
+    String getColour();
+    Long getPrice();
+    PlaneType getType();
 }
