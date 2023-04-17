@@ -1,15 +1,21 @@
 package com.spring.designpatterns.adapter;
 
 public class Main {
-
     public static void main(String[] args) {
 
-        GermanPlug germanPlug = new GermanPlug();
-        AmericanPlugAdapter adapter = new AmericanPlugAdapter(germanPlug);
-        AmericanOutlet americanOutlet = new AmericanOutlet();
+        GeneratePassword userGeneratePassword = new UserPassword();
+        userGeneratePassword.generate();
+        userGeneratePassword.rollback();
 
-        adapter.convertPlug();
-        americanOutlet.plugFlatPins();
+        GeneratePassword adminGeneratePassword = new AdminPassword();
+        adminGeneratePassword.generate();
+        adminGeneratePassword.rollback();
+
+        GuestPassword guestPassword = new GuestPassword();
+
+        GeneratePassword guestAdapterGeneratePassword = new GuestAdapter(guestPassword);
+        guestAdapterGeneratePassword.generate();
+        guestAdapterGeneratePassword.rollback();
 
     }
 }
