@@ -1,4 +1,4 @@
-package com.spring.designpatterns.abstract_factory.car;
+package com.spring.designpatterns.abstractfactory.car;
 
 
 public interface ICar {

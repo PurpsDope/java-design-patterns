@@ -1,11 +1,11 @@
-package com.spring.designpatterns.abstract_factory;
+package com.spring.designpatterns.abstractfactory;
 
 
-import com.spring.designpatterns.abstract_factory.car.ICar;
-import com.spring.designpatterns.abstract_factory.factory.FordFactory;
-import com.spring.designpatterns.abstract_factory.factory.IAbstractFactory;
-import com.spring.designpatterns.abstract_factory.factory.SubaruFactory;
-import com.spring.designpatterns.abstract_factory.plane.IPlane;
+import com.spring.designpatterns.abstractfactory.car.ICar;
+import com.spring.designpatterns.abstractfactory.factory.FordFactory;
+import com.spring.designpatterns.abstractfactory.factory.IAbstractFactory;
+import com.spring.designpatterns.abstractfactory.factory.SubaruFactory;
+import com.spring.designpatterns.abstractfactory.plane.IPlane;
 
 public class Main {
 

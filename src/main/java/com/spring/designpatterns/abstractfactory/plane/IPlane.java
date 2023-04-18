@@ -1,4 +1,4 @@
-package com.spring.designpatterns.abstract_factory.plane;
+package com.spring.designpatterns.abstractfactory.plane;
 
 
 public interface IPlane {

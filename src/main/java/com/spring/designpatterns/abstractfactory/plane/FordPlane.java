@@ -1,15 +1,16 @@
-package com.spring.designpatterns.abstract_factory.plane;
+package com.spring.designpatterns.abstractfactory.plane;
 
-public class SubaruPlane implements IPlane {
+
+public class FordPlane implements IPlane {
 
     private final String colour;
     private Long price;
     private final PlaneType planeType;
 
-    public SubaruPlane(String colour, Long price) {
+    public FordPlane(String colour, Long price) {
         this.colour = colour;
         this.price = price;
-        this.planeType = PlaneType.BUSINESS_JET;
+        this.planeType = PlaneType.FIGHTER_AIRCRAFT;
     }
 
     @Override
@@ -29,7 +30,7 @@ public class SubaruPlane implements IPlane {
 
     @Override
     public String toString() {
-        return "SubaruPlane{" +
+        return "FordPlane{" +
                 "colour='" + colour + '\'' +
                 ", price=" + price +
                 ", planeType=" + planeType +
