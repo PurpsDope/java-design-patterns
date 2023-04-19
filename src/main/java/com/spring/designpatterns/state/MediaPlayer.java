@@ -5,7 +5,7 @@ public class MediaPlayer {
     private MediaPlayerState state;
 
     public MediaPlayer() {
-        state = new StoppedState();
+        state = new StoppedState(this);
     }
 
     public void setState(MediaPlayerState state) {
@@ -13,11 +13,11 @@ public class MediaPlayer {
     }
 
     public void play() {
-        state.play(this);
+        state.play();
     }
 
     public void stop() {
-        state.stop(this);
+        state.stop();
     }
 
 }
