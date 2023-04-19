@@ -2,28 +2,22 @@ package com.spring.designpatterns.state;
 
 public class MediaPlayer {
 
-    private State state;
+    private MediaPlayerState state;
 
     public MediaPlayer() {
         state = new StoppedState();
     }
 
-    public void setState(State state) {
+    public void setState(MediaPlayerState state) {
         this.state = state;
     }
 
     public void play() {
-        state.play();
-        setState(new PlayingState());
-    }
-
-    public void pause() {
-        state.pause();
-        setState(new PausedState());
+        state.play(this);
     }
 
     public void stop() {
-        state.stop();
-        setState(new StoppedState());
+        state.stop(this);
     }
+
 }

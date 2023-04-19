@@ -1,19 +1,14 @@
 package com.spring.designpatterns.state;
 
-public class StoppedState implements State {
-
+public class StoppedState implements MediaPlayerState {
     @Override
-    public void play() {
-        System.out.println("Playing..");
+    public void play(MediaPlayer player) {
+        player.setState(new PlayingState());
+        System.out.println("Started playing...");
     }
 
     @Override
-    public void pause() {
-        System.out.println("Ignored! Can't pause when stopped..");
-    }
-
-    @Override
-    public void stop() {
-        System.out.println("Ignored! Already stopped..");
+    public void stop(MediaPlayer player) {
+        System.out.println("[IGNORED] - Already stopped.");
     }
 }
